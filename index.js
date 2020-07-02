@@ -1,16 +1,16 @@
-// $(document).ready( function (){
+$(document).ready( function (){
 
-//     let input = document.getElementById("input")
-//     let submit = document.getElementById("submit")
+    let input = document.getElementById("input")
+    let submit = document.getElementById("submit")
 
-//     submit.addEventListener("click", getCountryInfo)
+    submit.addEventListener("click", getCountryInfo)
 
-//     function getCountryInfo() {
-//         $.ajax({
-//             url: "https://restcountries.eu/rest/v2/name" + input.value,
-//             success: function(result) {
-//                 displayCountryData(result)
-//                 }
-//             })
-//         // }	
-//     })
+    function getCountryInfo() {
+        $.ajax({
+            url: "https://restcountries.eu/rest/v2/name/" + input.value,
+            success: function(result) {
+                console.log(result)
+            }
+        })
+     }	
+})
