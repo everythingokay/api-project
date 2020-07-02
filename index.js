@@ -1,22 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         $(document).ready(function (){
   
             let searchBox = document.getElementById("searchBox");
@@ -46,4 +27,4 @@
 
 
         
-        })
+        }
