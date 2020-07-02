@@ -1,16 +1,30 @@
-$(document).ready( function (){
+        $(document).ready(function (){
+  
+            let searchBox = document.getElementById("searchBox");
+            let searchButton = document.getElementById("searchButton");
 
-    let input = document.getElementById("input")
-    let submit = document.getElementById("submit")
+            searchButton.addEventListener("click", getInfo)
 
-    submit.addEventListener("click", getCountryInfo)
+            function getInfo(){
 
-    function getCountryInfo() {
-        $.ajax({
-            url: "https://restcountries.eu/rest/v2/name/" + input.value,
-            success: function(result) {
-                console.log(result)
+                $.ajax({
+                    url: "https://restcountries.eu/rest/v2/name/" + searchBox.value,
+                    success: function(response) {
+                        console.log(response)
+                        displayCountryName(response)
+                    }
+                }) 
+
+
+                
+
             }
+
+            function displayCountryName(countries){
+                $("#country-name").html("Name of the country: " + countries[0].name)
+            }
+
+
+
+        
         })
-     }	
-})
