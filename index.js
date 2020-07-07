@@ -11,6 +11,7 @@
                     url: "https://restcountries.eu/rest/v2/name/" + searchBox.value,
                     success: function(response) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                         // console.log(response)
                         displayCountryInfo(response)
                     }
@@ -27,6 +28,9 @@
 
             // https://restcountries.eu/rest/v2/capital/{capital}
 =======
+=======
+
+>>>>>>> b751718212881f4d191b83b1f12483296de7a279
                         console.log(response)
                         displayCountryInfo(response)
                         displayFlag(response)
@@ -53,7 +57,10 @@
                 document.body.appendChild(flagPic);           
             }
 
+<<<<<<< HEAD
 >>>>>>> 6ae3b09630070c5193b25c3c1223eed48ba84dfc
+=======
+>>>>>>> b751718212881f4d191b83b1f12483296de7a279
 
         
         })
