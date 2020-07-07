@@ -10,6 +10,7 @@
                 $.ajax({
                     url: "https://restcountries.eu/rest/v2/name/" + searchBox.value,
                     success: function(response) {
+
                         console.log(response)
                         displayCountryInfo(response)
                         displayFlag(response)
