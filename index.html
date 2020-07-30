@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-</head>
-<body>
-	
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
 
-	<div id="isContainer">
-		<input id="searchBox" type="text" name="">
-		<div id="searchButton" type="button" name="">Search</div>
-	</div>
+    <body>
+        <div id="wrapper">
+            <input id="search" type="text" name="">
+            <button id="submit" type="button" name="">Search</button>
 
-		<h2 id="country-name"></h2>
-<<<<<<< HEAD
-<<<<<<< HEAD
+            <br><br><br>
 
-		<h2 id="country-capital"></h2>
-=======
-		<div id="country-capital"></div>
-		<div id="country-pop"></div>
-		<div id="country-currency"></div>
->>>>>>> 6ae3b09630070c5193b25c3c1223eed48ba84dfc
-=======
+            <div id="country-name"></div>
+            <div id="country-capital"></div>
+            <div id="country-flag"></div>
+            <div id="country-pop"></div>
+            <div id="country-currency"></div>
+            <br><br>
+            <div id="language">
+                <button class="language-button">FR</button>
+                <button class="language-button">DE</button>
+                <button class="language-button">JA</button>
+            </div>
+            <div class="translation"></div>
+            <br><br>
+            <button id="gdp-button">GDP</button>
+            <div id="gdp-result"></div>
+            <br><br>
+            <div id="graph"></div>
+        </div>
 
-		<div id="country-capital"></div>
-		<div id="country-pop"></div>
-		<div id="country-currency"></div>
-
->>>>>>> b751718212881f4d191b83b1f12483296de7a279
-
-<script type="text/javascript" src='index.js'></script>
-</body>
+        <script type="text/javascript" src="index.js"></script>
+        </body>
 </html>
