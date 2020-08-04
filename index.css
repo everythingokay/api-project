@@ -9,12 +9,7 @@
     padding: 5px;
 }
 
-#country-flag {
-    width: 190px;
-    height: 100px;
-}
-
-#country-flag2 {
+#country-flag, #country-flag2 {
     width: 190px;
     height: 100px;
 }
@@ -23,8 +18,14 @@
 	margin-top: 30px;
 }
 
-#graph {
+#graph, #graph2 {
     width: 80%;
     height: 300px;
     margin: 10px auto;
     }
+
+@media all and (max-width: 768px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+}
