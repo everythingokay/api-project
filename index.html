@@ -11,28 +11,51 @@
 
     <body>
         <div id="wrapper">
-            <input id="search" type="text" name="">
-            <button id="submit" type="button" name="">Search</button>
+            <div id="left">
+                <input id="search" type="text" name="">
+                <button id="submit" type="button" name="">Search</button>
 
-            <br><br><br>
+                <div id="country-name"></div>
+                <div id="country-capital"></div>
+                <div id="country-flag"></div>
+                <div id="country-pop"></div>
+                <div id="country-currency"></div>
 
-            <div id="country-name"></div>
-            <div id="country-capital"></div>
-            <div id="country-flag"></div>
-            <div id="country-pop"></div>
-            <div id="country-currency"></div>
-            <br><br>
-            <div id="language">
-                <button class="language-button">FR</button>
-                <button class="language-button">DE</button>
-                <button class="language-button">JA</button>
+                <div id="language">
+                    <button class="language-button">FR</button>
+                    <button class="language-button">DE</button>
+                    <button class="language-button">JA</button>
+                </div>
+                <div class="translation"></div>
+
+                <button id="gdp-button">GDP</button>
+                <div id="gdp-result"></div>
+
+                <div id="graph"></div>
             </div>
-            <div class="translation"></div>
-            <br><br>
-            <button id="gdp-button">GDP</button>
-            <div id="gdp-result"></div>
-            <br><br>
-            <div id="graph"></div>
+
+            <div id="right">
+                <input id="search" type="text" name="">
+                <button id="submit" type="button" name="">Search</button>
+
+                <div id="country-name2"></div>
+                <div id="country-capital2"></div>
+                <div id="country-flag2"></div>
+                <div id="country-pop2"></div>
+                <div id="country-currency2"></div>
+
+                <div id="language">
+                    <button class="language-button">FR</button>
+                    <button class="language-button">DE</button>
+                    <button class="language-button">JA</button>
+                </div>
+                <div class="translation"></div>
+
+                <button id="gdp-button">GDP</button>
+                <div id="gdp-result2"></div>
+
+                <div id="graph2"></div>
+            </div>
         </div>
 
         <script type="text/javascript" src="index.js"></script>

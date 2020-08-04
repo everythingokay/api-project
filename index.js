@@ -87,7 +87,7 @@ $(document).ready(function () {
                         y: gdpValue }], {
                         margin: { t: 10 } } );
                     }
-        
+
                 })
             }
 

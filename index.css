@@ -1,4 +1,20 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+
+#left, #right {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
 #country-flag {
+    width: 190px;
+    height: 100px;
+}
+
+#country-flag2 {
     width: 190px;
     height: 100px;
 }
@@ -8,5 +24,7 @@
 }
 
 #graph {
-    width: 100%;
+    width: 80%;
+    height: 300px;
+    margin: 10px auto;
     }
